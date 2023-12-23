@@ -381,7 +381,7 @@ class X64ObfuscatorLib:
             try:
                 ip+=e.encode(bb[i],ip)
             except:
-                print('[*] warning cannot handle branch')
+                print('[*] warning cannot handle insn')
                 print(hex(bb[i].ip),bb[i])
         return bb
     def get_next_ip(self,insn,ip):
